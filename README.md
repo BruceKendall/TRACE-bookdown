@@ -37,7 +37,21 @@ It is important that you refer to those publications so that model users can che
 See also: http://cream-itn.eu/trace 
 
 ## Usage
-To be added when complete.
+- Download the Trace.Rmd file from the repository, and save it with a local name
+- Open the file in Rstudio (or your favorite text editor)
+- Replace `< Please provide full reference to the article, report, or book in which your model is presented >` with the reference information for your article
+- In each section, fill out the summary and add your text, replacing the < placeholders >. Format according to standard Rmarkdown syntax. You should also have access to enhancements from the `bookdown` package
+- Knit the file (built into Rstudio; you'll have to use the command line otherwise)
+- If you have references, you will need to add the name of the bib file to the YAML header
+- You should not need to otherwise edit the YAML header, unless you need to load other LaTeX packages. You should not edit any of the body outside the < placeholders > (exception: You may remove the the `\localtableofcontents` commands for sections that are short or uncomplicated)
+
 
 ## Requirements
 The `bookdown` and `knitr` R packages; development will be easier in RStudio.
+
+## Issues
+- There is no page header as is suggested in the MS Word template
+- The section headers do not have horizontal rules as in the MS Word template
+- The template has not been tested in actual use yet
+- The user has to scroll through an aweful lot of boilerplate. It may be possible to offload that into supporting files; the cost would be that the user then has to download those files
+- More documentation might be helpful on knitting, rmarkdown, and bookdown. 
